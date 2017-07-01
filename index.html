@@ -92,12 +92,56 @@ header, footer {
 <div class="w3-container w3-blue">
   <h2 style="text-align:left";>Live Pressure</h2>
   <p style="text-align:left";>Updated Every 15 Minutes -<br>Atmospheric Pressure: Hectopascals (hPa)</p>
-  <embed height="75" width="75" src="pressure.txt">
+  <!--
+Begin Losant Embed
+Drop this in your markup where you would like the widget to go.
+-->
+<a class="los-widget"
+  href="https://app.losant.com/dashboards/594eafe129ff320007524a0b?embed=Sy_fSr44W"
+  data-dashboard-id="594eafe129ff320007524a0b"
+  data-block-id="Sy_fSr44W"
+  data-theme="light"
+  data-height="240px"
+  data-width="50%">
+  View my Losant-powered widget "Pressure"
+</a>
+<script>window.lsnt = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0], t = window.lsnt || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s); js.id = id;
+  js.src = "https://app.losant.com/scripts/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs); t._e = [];
+  t.ready = function(f) { t._e.push(f); }; return t;
+}(document, "script", "lsnt-widgets"));</script>
+<!-- End LosantEmbed -->
+  <br><embed height="75" width="75" src="pressure.txt">
 </div>
 
 <div class="w3-container w3-blue">
   <h2 style="text-align:left";>Hourly Archived Atmospheric Pressure Data</h2>
-  <form action="pressurearchiveddata.txt">
+  <!--
+Begin Losant Embed
+Drop this in your markup where you would like the widget to go.
+-->
+<a class="los-widget"
+  href="https://app.losant.com/dashboards/594eafe129ff320007524a0b?embed=rkKwWGJE-"
+  data-dashboard-id="594eafe129ff320007524a0b"
+  data-block-id="rkKwWGJE-"
+  data-theme="light"
+  data-height="240px"
+  data-width="50%">
+  View my Losant-powered widget "Pressure"
+</a>
+<script>window.lsnt = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0], t = window.lsnt || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s); js.id = id;
+  js.src = "https://app.losant.com/scripts/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs); t._e = [];
+  t.ready = function(f) { t._e.push(f); }; return t;
+}(document, "script", "lsnt-widgets"));</script>
+<!-- End LosantEmbed -->
+  <br><form action="pressurearchiveddata.txt">
     <input type="submit" value="Click Here" />
   <form action="https://www.dropbox.com/s/errp1115uvqa59w/PressureArchivedData.txt?dl=0">
     <input type="submit" value="View Online" />
