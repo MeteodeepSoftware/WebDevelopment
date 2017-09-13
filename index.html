@@ -4,6 +4,10 @@
 <head>
 <style>
 
+ #blink {
+     text-decoration: blink
+    }
+    
 body {font-family:cursive;
     }
     
@@ -92,7 +96,7 @@ header, footer {
 </div>
 
 <div class="divider">
-  <blink style="text-align:left; color:red;";>WEATHER ALERTS</blink>
+  <h2 id="blink" style="text-align:left; color:red;";>WEATHER ALERTS</h2>
   <br><embed height="75" width="250" src="weatherwarning.txt">
   <form action="weatherwarning.txt">
     <input type="submit" value="Click Here" />
