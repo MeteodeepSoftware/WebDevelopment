@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<title>Meteodeep</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3mobile.css">
+<link rel="stylesheet" href="/lib/w3-theme-teal.css">
+<body style="max-width:600px">
+
+<nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+<div class="w3-container w3-theme-d2">
+  <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
+  <br>
+  <div class="w3-padding w3-center">
+  </div>
+</div>
+<a class="w3-bar-item w3-button" href="#">Home</a>
+<a class="w3-bar-item w3-button" href="https://github.com/MeteodeepSoftware">Github</a>
+<a class="w3-bar-item w3-button" href="http://stackoverflow.com/users/7824947/meteodeep">Stack Overflow</a>
+<a class="w3-bar-item w3-button" href="http://www.tinyurl.com/MeteodeepApp">Android App</a>
+<a class="w3-bar-item w3-button" href="http://www.tinyurl.com/Meteodeep">Desktop Website</a>
+</nav>
+
+<header class="w3-bar w3-card w3-theme">
+  <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme" onclick="openSidebar()">&#9776;</button>
+  <h1 class="w3-bar-item">Meteodeep</h1>
+</header>
+
+<div class="w3-container">
+<hr>
+<div class="w3-cell-row">
+  <div class="w3-cell" style="width:30%">
+   <img class="w3-circle" src="http://daniel.hopto.me:8081/meteodeep/LogoSmall.jpg" alt="logo" style="width:75%">
+  </div>
+  <div class="w3-cell w3-container">
+    <h3>Live Pressure</h3>
+    <p>Live, Real-Time Information, Archived Data and More!</p>
+  </div>
+</div>  
+<hr>
+<div class="w3-cell-row">
+  <div class="w3-cell" style="width:30%">
+   <img class="w3-circle" src="http://daniel.hopto.me:8081/meteodeep/LogoSmall.jpg" alt="logo" style="width:75%">
+  </div>
+  <div class="w3-cell w3-container">
+    <h3>Climalyser</h3>
+    <p>Global, Local Climate Change Survey</p>
+  </div>
+</div>
+<hr>
+<div class="w3-cell-row">
+  <div class="w3-cell" style="width:30%">
+   <img class="w3-circle" src="http://daniel.hopto.me:8081/meteodeep/LogoSmall.jpg" alt="logo" style="width:75%">
+  </div>
+  <div class="w3-cell w3-container">
+    <h3>Weather Warnings</h3>
+    <p>Online, Email and Text Alerts</p>
+  </div>
+</div>
+<hr>
+</div>
+
+<footer class="w3-container w3-theme w3-margin-top">
+  <h3>Meteodeep 2017</h3>
+</footer>
+
+<script>
+closeSidebar();
+function openSidebar() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function closeSidebar() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
