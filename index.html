@@ -5,6 +5,37 @@
     <link rel="icon" href="<Logo.jpg>"></link>
 <style>
     
+    .blink_text {
+
+    animation:1s blinker linear infinite;
+    -webkit-animation:1s blinker linear infinite;
+    -moz-animation:1s blinker linear infinite;
+
+     color: red;
+     font-family:monospace;
+
+
+text-
+    }
+
+    @-moz-keyframes blinker {  
+     0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+     }
+
+    @-webkit-keyframes blinker {  
+     0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+     }
+
+    @keyframes blinker {  
+     0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+     }
+    
 body {font-family:"Monospace";
     }
     
@@ -90,10 +121,11 @@ header, footer {
   <br><a href='http://en.sat24.com/en' target='sat24'><img src='http://api.sat24.com/mostrecent/GB/rainTMC' width=500 height=304></a>
   <br><a href='http://en.sat24.com/en' target='sat24'><image src='http://api.sat24.com/crop?type=infraPolair&lat=53.1424&lon=-7.6921&width=300&height=300&zoom=1.00&continent=eu' width=300 height=300></a>
   <br><a href='http://en.sat24.com/en' target='sat24'><img src='http://api.sat24.com/mostrecent/GB/visual5hdcomplete' width=500 height=304></a>
-</div>
+  <br><a href='http://en.sat24.com/en' target='sat24'><image src='http://api.sat24.com/animated/GB/visual/1/GMT%20Standard%20Time/4551246' width=400 height=291></a>
+ </div>
 
 <div class="divider">
-  <h2 style="text-align:left; color:red;";>WEATHER ALERTS</h2>
+  <h2 class="blink_text" style="text-align:left; color:red;";>WEATHER ALERTS</h2>
   <br><embed height="75" width="250" src="https://www.dropbox.com/s/gsqasov0xx8dqkq/WeatherWarning.txt">
   <form action="weatherwarning.txt">
     <input type="submit" value="Click Here" />
